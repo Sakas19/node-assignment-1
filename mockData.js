@@ -1,4 +1,4 @@
-export const mockData = [
+const mockData = [
   {
     Title: "Becoming Bond",
     Year: "2017",
