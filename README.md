@@ -12,6 +12,7 @@ GET /movies
 Description: Retrieve a list of all Bond movies.
 Example: GET http://localhost:3009/JBmovies
 Response: An array of Bond movies in JSON format.
+
 GET /movies/:id
 Description: Retrieve a specific Bond movie based on its ID.
 Example: GET http://localhost:3009/JBmovies/1
@@ -31,6 +32,7 @@ Content-Type: application/json
   "director": "Martin Campbell"
 }
 Response: The newly created Bond movie in JSON format.
+
 PUT /movies/:id
 Description: Update an existing Bond movie based on its ID.
 Example:
@@ -52,6 +54,7 @@ Testing with Postman
 You can use Postman to test the API endpoints. Here's how you can send requests and expect responses:
 
 Open Postman.
+
 Set the request URL to the desired endpoint (e.g., http://localhost:3009/JBmovies).
 Choose the appropriate HTTP method (GET, POST, PUT, DELETE).
 Add any required headers or parameters.
