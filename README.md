@@ -10,12 +10,12 @@ The API provides the following endpoints for managing Bond movies:
 
 GET /movies
 Description: Retrieve a list of all Bond movies.
-Example: GET http://localhost:3009/JBmovies
+Example: GET http://localhost:3009/movies
 Response: An array of Bond movies in JSON format.
 
 GET /movies/:id
 Description: Retrieve a specific Bond movie based on its ID.
-Example: GET http://localhost:3009/JBmovies/1
+Example: GET http://localhost:3009/movies/1
 Response: The Bond movie with the specified ID in JSON format.
 POST /movies
 Description: Add a new Bond movie.
@@ -23,13 +23,14 @@ Example:
 Request:
 bash
 Copy code
-POST http://localhost:3009/JBmovies
+POST http://localhost:3009/movies
 Content-Type: application/json
 
 {
-  "title": "Casino Royale",
-  "year": 2006,
-  "director": "Martin Campbell"
+        "Title": "The movies title",
+        "Year": "2001",
+        "Released": "2 may 2001",
+        "Genre": "the genre"
 }
 Response: The newly created Bond movie in JSON format.
 
@@ -39,7 +40,7 @@ Example:
 Request:
 bash
 Copy code
-PUT http://localhost:3009/JBmovies/1
+PUT http://localhost:3009/movies/1
 Content-Type: application/json
 
 {
@@ -48,14 +49,18 @@ Content-Type: application/json
 Response: The updated Bond movie in JSON format.
 DELETE /movies/:id
 Description: Delete a Bond movie based on its ID.
-Example: DELETE http://localhost:3009/JBmovies/1
+Example: DELETE http://localhost:3009/movies/1
 Response: A success message indicating that the Bond movie was deleted.
 Testing with Postman
 You can use Postman to test the API endpoints. Here's how you can send requests and expect responses:
 
 Open Postman.
+<<<<<<< HEAD
 
 Set the request URL to the desired endpoint (e.g., http://localhost:3009/JBmovies).
+=======
+Set the request URL to the desired endpoint (e.g., http://localhost:3009/movies).
+>>>>>>> ddd8cc8 (added valid api keys file)
 Choose the appropriate HTTP method (GET, POST, PUT, DELETE).
 Add any required headers or parameters.
 If necessary, provide a request body in JSON format.
