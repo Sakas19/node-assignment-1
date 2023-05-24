@@ -43,9 +43,6 @@ Copy code
 PUT http://localhost:3009/movies/1
 Content-Type: application/json
 
-{
-  "director": "Sam Mendes"
-}
 Response: The updated Bond movie in JSON format.
 DELETE /movies/:id
 Description: Delete a Bond movie based on its ID.
@@ -55,12 +52,7 @@ Testing with Postman
 You can use Postman to test the API endpoints. Here's how you can send requests and expect responses:
 
 Open Postman.
-<<<<<<< HEAD
-
-Set the request URL to the desired endpoint (e.g., http://localhost:3009/JBmovies).
-=======
 Set the request URL to the desired endpoint (e.g., http://localhost:3009/movies).
->>>>>>> ddd8cc8 (added valid api keys file)
 Choose the appropriate HTTP method (GET, POST, PUT, DELETE).
 Add any required headers or parameters.
 If necessary, provide a request body in JSON format.
